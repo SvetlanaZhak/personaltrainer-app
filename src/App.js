@@ -1,18 +1,35 @@
 import React, { Component } from 'react';
-import CustomerList from './components/CustomerList'
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Customer from './components/CustomerList';
+import Training from './components/Training'
+import FrontPage from './components/HomePage';
+
+import Navigator from './components/Navigator';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-
-          <h2>Personal Trainer App</h2>
-          <CustomerList>
-          </CustomerList>
-
+          <h1 className="App-title">Personal Trainer Application</h1>
         </header>
+
+        <BrowserRouter>
+          <div>
+            <Navigator />
+
+            <Switch>
+              <Route exact path="/" render={() => <FrontPage />} />
+              <Route path="/customer" component={Customer} />
+              <Route path="/training" component={Training} />
+
+
+            </Switch>
+          </div>
+        </BrowserRouter>
+
       </div>
     );
   }
