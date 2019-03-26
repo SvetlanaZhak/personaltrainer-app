@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import 'react-confirm-alert/src/react-confirm-alert.css'
 
@@ -81,7 +81,7 @@ class CustomerList extends Component {
                     filterable: false,
                     width: 100,
                     accessor: "links[0].href",
-                    Cell: ({ value }) => (<button className="btn btn-danger"
+                    Cell: ({ value }) => (<button className="btn btn-success"
                         onClick={() => { this.onDelClick(value) }}>Delete</button>)
                 }
 
