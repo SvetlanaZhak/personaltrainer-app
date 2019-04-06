@@ -18,7 +18,7 @@ class Navigator extends Component {
                             <Link className="nav-link" to="/Customer">Customers</Link>
                         </li>
                         <li className="nav-item active">
-                            <Link className="nav-link" to="/Training">Training</Link>
+                            <Link className="nav-link" to="/Training">Trainings</Link>
                         </li>
 
                     </ul>
