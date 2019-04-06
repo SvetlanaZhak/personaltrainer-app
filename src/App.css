@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background:  #FFFF99;
+  background:  rgb(112, 216, 128);
 }
 
 .App-header {
-  background-color: mediumpurple;
+  background-color: rgb(211, 216, 112);
   height: 70px;
   padding: 20px;
   color: black;

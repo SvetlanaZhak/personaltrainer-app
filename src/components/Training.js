@@ -25,14 +25,16 @@ class Training extends Component {
     loadTrainings = () => {
         fetch('https://customerrest.herokuapp.com/gettrainings')
             .then(response => response.json())
-            .then(jsondata => {
+            .then(jsondata =>
+                /*{
                 jsondata.forEach(activityRow => {
                     activityRow.date = moment(activityRow.date).format('DD MMM YYYY');
                 });
-                this.setState({ trainings: jsondata, });
-            })
+                */this.setState({ trainings: jsondata, })
+            )
             .catch(err => console.error(err));
     }
+
 
     // delete trainings
 
@@ -47,15 +49,6 @@ class Training extends Component {
         }
     };
 
-    /* deleteTraining = (trainingLink) => {
-         if (window.confirm("Are you sure?")) {
-             fetch(trainingLink, { method: 'DELETE' })
-                 .then(res => this.loadTrainings())
-                 .then(res => this.setState({ open: true, message: 'Training deleted' }))
-                 .catch(err => console.error(err))
- 
-         }
-     };*/
 
     //save new training
     saveTraining = (training) => {
@@ -93,7 +86,7 @@ class Training extends Component {
     render() {
         const columns = [
             {
-                Header: "Id",
+                Header: 'Id',
                 accessor: 'id',
                 show: false
             },
