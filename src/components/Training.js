@@ -93,6 +93,7 @@ class Training extends Component {
             {
                 Header: 'Date',
                 accessor: 'date',
+                Cell: props => <span>{moment.utc(props.value).format('DD.MM.YYYY')}</span>,
             },
             {
                 Header: 'Duration in minutes',
