@@ -65,7 +65,7 @@ class Training extends Component {
 
     //Update a training list
     updatedTraining = (link, updatedTraining) => {
-        fetch("https://customerrest.herokuapp.com/api/trainings/" + link,
+        fetch("https://customerrest.herokuapp.com/gettrainings" + link,
             {
                 method: 'PUT',
                 headers: {
