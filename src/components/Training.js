@@ -52,7 +52,7 @@ class Training extends Component {
 
     //save new training
     saveTraining = (training) => {
-        fetch('https://customerrest.herokuapp.com/api/trainings/',
+        fetch("https://customerrest.herokuapp.com/api/trainings/",
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -65,7 +65,7 @@ class Training extends Component {
 
     //Update a training list
     updatedTraining = (link, updatedTraining) => {
-        fetch("https://customerrest.herokuapp.com/gettrainings" + link,
+        fetch("https://customerrest.herokuapp.com/api/trainings/" + link,
             {
                 method: 'PUT',
                 headers: {
