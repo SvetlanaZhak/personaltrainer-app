@@ -8,7 +8,7 @@
     "antd": "^3.16.2",
     "bootstrap": "^4.3.1",
     "dayz": "^2.3.0",
-    "firebase": "^5.9.1",
+    "firebase": "^10.9.0",
     "flexbox-react": "^4.4.0",
     "interact.js": "^1.2.8",
     "jquery": "^3.4.0",
